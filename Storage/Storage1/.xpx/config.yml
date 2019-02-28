@@ -13,7 +13,7 @@ storage:
   space: 1000
 
 acceptor:
-  port: "8080"
+  port: "9080"
 
 network:
   # Types
