@@ -12,9 +12,6 @@ storage:
   repository: "~/.xpx/storage" # Should be absolute path
   space: 1000
 
-acceptor:
-  port: "10080"
-
 network:
   # Types
   # - MAIN_NET(key is not needed)

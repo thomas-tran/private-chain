@@ -5,11 +5,11 @@ services:
     image: xgreenx99/go-xpx:0.2.0
     # ports:
     #   - 6000:6000
-    #   - 9080:9080
+    #   - 9080:8080
     volumes:
       - ./Storage1/.xpx:/root/.xpx:rw
     restart: always
-    command: sh -c "dfms"
+    command: sh -c "dfms --port 9080"
     network_mode: "host"
 
   storage2-node:
@@ -17,11 +17,11 @@ services:
     image: xgreenx99/go-xpx:0.2.0
     # ports:
     #   - 7000:7000
-    #   - 10080:10080
+    #   - 10080:8080
     volumes:
       - ./Storage2/.xpx:/root/.xpx:rw
     restart: always
-    command: sh -c "dfms"
+    command: sh -c "dfms --port 10080"
     network_mode: "host"
     depends_on:
     - storage1-node
@@ -31,11 +31,11 @@ services:
     image: xgreenx99/go-xpx:0.2.0
     # ports:
     #   - 8000:8000
-    #   - 11080:10080
+    #   - 11080:8080
     volumes:
       - ./Storage3/.xpx:/root/.xpx:rw
     restart: always
-    command: sh -c "dfms"
+    command: sh -c "dfms --port 11080"
     network_mode: "host"
     depends_on:
     - storage1-node
