@@ -10,6 +10,7 @@ services:
       - ./Storage1/.xpx:/root/.xpx:rw
     restart: always
     command: sh -c "xpx"
+    network_mode: "host"
 
   storage2-node:
     # Downloads Catapult Server from specified Docker repo
@@ -21,6 +22,7 @@ services:
       - ./Storage2/.xpx:/root/.xpx:rw
     restart: always
     command: sh -c "xpx"
+    network_mode: "host"
     depends_on:
     - storage1-node
 
@@ -34,5 +36,6 @@ services:
       - ./Storage3/.xpx:/root/.xpx:rw
     restart: always
     command: sh -c "xpx"
+    network_mode: "host"
     depends_on:
     - storage1-node

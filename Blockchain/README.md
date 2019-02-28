@@ -10,3 +10,5 @@ docker-compose logs --tail 100 --follow
 ```
 
 In `docker-compose.yml` file you can change version of catapult and rest image.
+
+You can find addresses with money in `Blockchain/addresses/addresses.yaml`

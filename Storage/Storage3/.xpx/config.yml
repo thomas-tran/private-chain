@@ -3,7 +3,7 @@ blockchain:
     public: ""
     publicTest: "http://bctestnet1.xpxsirius.io:3000"
     mijin: ""
-    mijinTest: "http://rest-gateway:3000" # Needed for contracts testing
+    mijinTest: "http://127.0.0.1:3000" # Needed for contracts testing
     private: ""
     privateTest: ""
   network: "mijinTest"
@@ -13,7 +13,7 @@ storage:
   space: 1000
 
 acceptor:
-  port: "8080"
+  port: "10080"
 
 network:
   # Types
@@ -24,13 +24,13 @@ network:
   protectorKey: "1a3df51c7ada03320c22df32e633747e08c4392e53e232e61d6f961f2d934ae4"
   node:
     addresses:
-      - "/ip4/0.0.0.0/tcp/5000"
+      - "/ip4/0.0.0.0/tcp/7000"
     privateKey: "85CFAB0E6079DAA58D7FF0990ACA64E571EC58527A16DB9391C87C436261190C"
 
 bootstrap:
   publicKey: "73472A2E9DCEA5C2A36EB7F6A34A634010391EC89E883D67360DB16F28B9443C"
   addresses:
-    - "/ip4/storage1-node/tcp/5000"
+    - "/ip4/127.0.0.1/tcp/5000"
 
 # If path is blank - log type will be disabled
 log:
