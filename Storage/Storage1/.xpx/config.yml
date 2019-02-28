@@ -24,7 +24,7 @@ network:
   protectorKey: "1a3df51c7ada03320c22df32e633747e08c4392e53e232e61d6f961f2d934ae4"
   node:
     addresses:
-      - "/ip4/0.0.0.0/tcp/5000"
+      - "/ip4/0.0.0.0/tcp/6000"
     privateKey: "2C8178EF9ED7A6D30ABDC1E4D30D68B05861112A98B1629FBE2C8D16FDE97A1C"
 
 #bootstrap:
