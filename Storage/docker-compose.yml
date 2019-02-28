@@ -3,9 +3,9 @@ services:
   storage1-node:
     # Downloads Catapult Server from specified Docker repo
     image: xgreenx99/go-xpx:0.2.0
-    ports:
-      - 6000:6000
-      - 9080:9080
+    # ports:
+    #   - 6000:6000
+    #   - 9080:9080
     volumes:
       - ./Storage1/.xpx:/root/.xpx:rw
     restart: always
@@ -15,9 +15,9 @@ services:
   storage2-node:
     # Downloads Catapult Server from specified Docker repo
     image: xgreenx99/go-xpx:0.2.0
-    ports:
-      - 7000:7000
-      - 10080:10080
+    # ports:
+    #   - 7000:7000
+    #   - 10080:10080
     volumes:
       - ./Storage2/.xpx:/root/.xpx:rw
     restart: always
@@ -29,9 +29,9 @@ services:
   storage3-node:
     # Downloads Catapult Server from specified Docker repo
     image: xgreenx99/go-xpx:0.2.0
-    ports:
-      - 8000:8000
-      - 11080:10080
+    # ports:
+    #   - 8000:8000
+    #   - 11080:10080
     volumes:
       - ./Storage3/.xpx:/root/.xpx:rw
     restart: always
