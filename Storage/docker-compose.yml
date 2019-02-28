@@ -9,7 +9,7 @@ services:
     volumes:
       - ./Storage1/.xpx:/root/.xpx:rw
     restart: always
-    command: sh -c "xpx"
+    command: sh -c "dfms"
     network_mode: "host"
 
   storage2-node:
@@ -21,7 +21,7 @@ services:
     volumes:
       - ./Storage2/.xpx:/root/.xpx:rw
     restart: always
-    command: sh -c "xpx"
+    command: sh -c "dfms"
     network_mode: "host"
     depends_on:
     - storage1-node
@@ -35,7 +35,7 @@ services:
     volumes:
       - ./Storage3/.xpx:/root/.xpx:rw
     restart: always
-    command: sh -c "xpx"
+    command: sh -c "dfms"
     network_mode: "host"
     depends_on:
     - storage1-node
