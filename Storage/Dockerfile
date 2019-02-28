@@ -11,9 +11,9 @@ RUN apt-get update && \
 COPY . /home/user/src
 
 RUN export GOPATH=/home/user/ && \
-    cd /home/user/src/github.com/proximax-storage/go-xpx/cmd/xpx && \
+    cd /home/user/src/github.com/proximax-storage/go-xpx-dfms/cmd/dfms && \
     go install && \
-    cd /home/user/src/github.com/proximax-storage/go-xpx/cmd/xpx-cli && \
+    cd /home/user/src/github.com/proximax-storage/go-xpx-dfms/cmd/dfms-cli && \
     go install
 
 #------------------------
