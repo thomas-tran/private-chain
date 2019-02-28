@@ -1,0 +1,6 @@
+cli:
+  config: '~/.xpx/config_cli.yml'
+  private_key: "14F8423888AE5F719B06FF5B5B242DDD31CE8003639FC69A2D3EFB82E32A2FBF"
+daemon:
+  address: http://127.0.0.1
+  port: "8080"

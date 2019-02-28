@@ -1,0 +1,16 @@
+{
+  "_info": "this file contains a list of api_node peers",
+  "knownPeers": [
+    {
+      "publicKey": "460458B98E2BAA36A8E95DE9B320379E89898885B71CF0174E02F1324FAFFAC1",
+      "endpoint": {
+        "host": "catapult-api-node",
+        "port": 7900
+      },
+      "metadata": {
+        "name": "api-node-0",
+        "roles": "Api"
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+version: "3.6"
+services:
+  storage1-node:
+    # Downloads Catapult Server from specified Docker repo
+    image: xgreenx99/go-xpx:0.1.1
+    ports:
+      - 5000:5000
+      - 8080:8080
+    volumes:
+      - ./Storage1/.xpx:/root/.xpx:rw
+    restart: always
+    command: sh -c "xpx"
+
+  storage2-node:
+    # Downloads Catapult Server from specified Docker repo
+    image: xgreenx99/go-xpx:0.1.1
+    ports:
+      - 6000:5000
+      - 9080:8080
+    volumes:
+      - ./Storage2/.xpx:/root/.xpx:rw
+    restart: always
+    command: sh -c "xpx"
+    depends_on:
+    - storage1-node
+
+  storage3-node:
+    # Downloads Catapult Server from specified Docker repo
+    image: xgreenx99/go-xpx:0.1.1
+    ports:
+      - 7000:5000
+      - 10080:8080
+    volumes:
+      - ./Storage3/.xpx:/root/.xpx:rw
+    restart: always
+    command: sh -c "xpx"
+    depends_on:
+    - storage1-node

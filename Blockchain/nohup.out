@@ -1,0 +1,7 @@
+2019/01/10 00:26:46 proto: duplicate proto type registered: loggabletracer.wire.TracerState
+2019/01/10 00:26:46 proto: duplicate proto type registered: loggabletracer.wire.TracerState.BaggageItemsEntry
+[[INFO]]00:26:56 acceptor.go:64: Shutdown service starting 2019-01-10 00:26:56.068146207 +0000 UTC m=+10.039475470 on signal 'signal 0'
+[[INFO]]00:27:05 logs.go:13: call handleNetworkType, input params <nil> 
+[[INFO]]00:27:05 network.go:79: end handleNetworkType, result {NetworkType:TEST_NET}
+[[INFO]]07:58:34 logs.go:13: call handleNetworkType, input params <nil> 
+[[INFO]]07:58:34 network.go:79: end handleNetworkType, result {NetworkType:TEST_NET}
