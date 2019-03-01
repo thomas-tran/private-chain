@@ -3,7 +3,7 @@ blockchain:
     public: ""
     publicTest: "http://bctestnet1.xpxsirius.io:3000"
     mijin: ""
-    mijinTest: "http://54.188.125.153:3000" # Needed for contracts testing
+    mijinTest: "http://127.0.0.1:3000" # Needed for contracts testing
     private: ""
     privateTest: ""
   network: "mijinTest"
