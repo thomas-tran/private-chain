@@ -4,5 +4,5 @@ services:
   cli:
     image: xgreenx99/go-xpx:0.2.1
     volumes:
-      - ./:/root/.xpx
+      - ./.xpx/:/root/.xpx/
     network_mode: "host"
