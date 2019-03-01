@@ -2,7 +2,7 @@ version: "3.6"
 services:
   storage1-node:
     # Downloads Catapult Server from specified Docker repo
-    image: xgreenx99/go-xpx:0.2.0
+    image: xgreenx99/go-xpx:0.2.1
     # ports:
     #   - 6000:6000
     #   - 9080:8080
@@ -14,7 +14,7 @@ services:
 
   storage2-node:
     # Downloads Catapult Server from specified Docker repo
-    image: xgreenx99/go-xpx:0.2.0
+    image: xgreenx99/go-xpx:0.2.1
     # ports:
     #   - 7000:7000
     #   - 10080:8080
@@ -28,7 +28,7 @@ services:
 
   storage3-node:
     # Downloads Catapult Server from specified Docker repo
-    image: xgreenx99/go-xpx:0.2.0
+    image: xgreenx99/go-xpx:0.2.1
     # ports:
     #   - 8000:8000
     #   - 11080:8080
