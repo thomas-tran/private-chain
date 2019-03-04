@@ -7,3 +7,4 @@ services:
       - ./.xpx/:/root/.xpx/
       - ./files/:/files/
     network_mode: "host"
+    entrypoint: ["dfms-cli"]
