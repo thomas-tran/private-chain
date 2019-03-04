@@ -2,7 +2,8 @@ version: '3'
 
 services:
   cli:
-    image: xgreenx99/go-xpx:0.2.1
+    image: xgreenx99/go-xpx:0.2.3
     volumes:
       - ./.xpx/:/root/.xpx/
+      - ./files/:/files/
     network_mode: "host"
