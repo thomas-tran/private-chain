@@ -2,7 +2,7 @@ version: '3'
 
 services:
   cli:
-    image: xgreenx99/go-xpx:0.2.3
+    image: xgreenx99/go-xpx:0.2.4
     volumes:
       - ./.xpx/:/root/.xpx/
       - ./files/:/files/

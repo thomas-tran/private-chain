@@ -20,6 +20,6 @@ cd ..
 To upload file via Cli:
 ```bash
 cd Cli
-docker run -v ./.xpp/:/root/.xpx/ -it xgreenx99/go-xpx:0.1.3 sh -c "xpx-cli contract create /root/.xpx/test.txt --duration 100000 --replications 1 --verifications 1 --pdp MHT"
+docker-compose run cli dfms-cli contract create /files/4.png --duration 100000 --replications 1 --verifications 1 --pdp APDP
 cd ..
 ```
