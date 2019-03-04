@@ -21,9 +21,3 @@ sudo rm -R Storage3/.xpx/storage
 docker-compose up -d
 docker-compose logs --tail 100 --follow
 ```
-
-## Building the Docker release image from source of GO
-
-```bash
-docker build -t go-xpx -f ./Dockerfile $GOPATH/src
-```
