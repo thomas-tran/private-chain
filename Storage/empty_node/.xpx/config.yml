@@ -1,0 +1,32 @@
+blockchain:
+  networkTypes:
+    public: ""
+    publicTest: "http://bctestnet1.xpxsirius.io:3000"
+    mijin: ""
+    mijinTest: "http://127.0.0.1:3000" # Needed for contracts testing
+    private: ""
+    privateTest: ""
+  network: "mijinTest"
+
+storage:
+  repository: "~/.xpx/storage" # Should be absolute path
+  space: 1000
+
+network:
+  type: "TEST_NET"
+  protectorKey: "1a3df51c7ada03320c22df32e633747e08c4392e53e232e61d6f961f2d934ae4"
+  node:
+    addresses:
+      - "/ip4/0.0.0.0/tcp/10001"
+    privateKey: "A97B139EB641BCC841A610231870925EB301BA680D07BBCF9AEE83FAA5E9FB22"
+
+bootstrap:
+  publicKey: "73472A2E9DCEA5C2A36EB7F6A34A634010391EC89E883D67360DB16F28B9443C"
+  addresses:
+    - "/ip4/127.0.0.1/tcp/6001"
+
+# If path is blank - log type will be disabled
+log:
+  path: "~/.xpx/logs/1.log"
+  debug: True
+  # shareLogsWith: http://140.82.35.79:1488/addLog

@@ -1,1 +1,4 @@
 .git
+Storage/*/.xpx/storage
+Storage/*/.xpx/logs
+

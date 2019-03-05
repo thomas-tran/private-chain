@@ -14,12 +14,7 @@ In `docker-compose.yml` file you can change version of storage images.
 
 To clean up files from Storage nodes:
 ```bash
-docker-compose down
-sudo rm -R Storage1/.xpx/storage
-sudo rm -R Storage2/.xpx/storage
-sudo rm -R Storage3/.xpx/storage
-docker-compose up -d
-docker-compose logs --tail 100 --follow
+chmod +x ./clean.sh && ./clean.sh
 ```
 
 ## Building the Docker release image from source of GO

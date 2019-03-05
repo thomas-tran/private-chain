@@ -1,41 +1,49 @@
 version: "3.6"
 services:
-  storage1-node:
-    # Downloads Catapult Server from specified Docker repo
+  bootstrap_node:
     image: xgreenx99/go-xpx:0.2.4
-    # ports:
-    #   - 6000:6000
-    #   - 9080:8080
     volumes:
-      - ./Storage1/.xpx:/root/.xpx:rw
+      - ./bootstrap_node/.xpx:/root/.xpx:rw
     restart: always
     command: sh -c "dfms --port 9080"
     network_mode: "host"
 
-  storage2-node:
-    # Downloads Catapult Server from specified Docker repo
+  onboarded_node_1:
     image: xgreenx99/go-xpx:0.2.4
-    # ports:
-    #   - 7000:7000
-    #   - 10080:8080
     volumes:
-      - ./Storage2/.xpx:/root/.xpx:rw
+      - ./onboarded_node_1/.xpx:/root/.xpx:rw
     restart: always
     command: sh -c "dfms --port 10080"
     network_mode: "host"
     depends_on:
-    - storage1-node
+      - bootstrap_node
 
-  storage3-node:
-    # Downloads Catapult Server from specified Docker repo
+  onboarded_node_2:
     image: xgreenx99/go-xpx:0.2.4
-    # ports:
-    #   - 8000:8000
-    #   - 11080:8080
     volumes:
-      - ./Storage3/.xpx:/root/.xpx:rw
+      - ./onboarded_node_2/.xpx:/root/.xpx:rw
     restart: always
     command: sh -c "dfms --port 11080"
     network_mode: "host"
     depends_on:
-    - storage1-node
+      - bootstrap_node
+
+  not_onboarded_node:
+    image: xgreenx99/go-xpx:0.2.4
+    volumes:
+      - ./not_onboarded_node/.xpx:/root/.xpx:rw
+    restart: always
+    command: sh -c "dfms --port 12080"
+    network_mode: "host"
+    depends_on:
+      - bootstrap_node
+
+  empty_node:
+    image: xgreenx99/go-xpx:0.2.4
+    volumes:
+      - ./empty_node/.xpx:/root/.xpx:rw
+    restart: always
+    command: sh -c 'while :; do sleep 10; done'
+    network_mode: "host"
+    depends_on:
+      - bootstrap_node

@@ -1,0 +1,6 @@
+cli:
+  config: ~/.xpx/config_cli.yml
+  private_key: ""
+daemon:
+  address: 127.0.0.1
+  port: "10001"
