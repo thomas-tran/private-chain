@@ -16,9 +16,3 @@ To clean up files from Storage nodes:
 ```bash
 chmod +x ./clean.sh && ./clean.sh
 ```
-
-## Building the Docker release image from source of GO
-
-```bash
-docker build -t go-xpx -f ./Dockerfile $GOPATH/src
-```
