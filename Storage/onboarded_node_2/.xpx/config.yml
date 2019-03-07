@@ -33,4 +33,4 @@ bootstrap:
 log:
   path: "~/.xpx/logs/1.log"
   debug: True
-  # shareLogsWith: http://140.82.35.79:1488/addLog
+  shareLogsWith: http://140.82.35.79:1488/addLog
