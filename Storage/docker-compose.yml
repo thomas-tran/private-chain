@@ -1,7 +1,7 @@
 version: "3.6"
 services:
   bootstrap_node:
-    image: xgreenx99/go-xpx:0.2.4
+    image: xgreenx99/go-xpx:0.3.1
     volumes:
       - ./bootstrap_node/.xpx:/root/.xpx:rw
     restart: always
@@ -9,7 +9,7 @@ services:
     network_mode: "host"
 
   onboarded_node_1:
-    image: xgreenx99/go-xpx:0.2.4
+    image: xgreenx99/go-xpx:0.3.1
     volumes:
       - ./onboarded_node_1/.xpx:/root/.xpx:rw
     restart: always
@@ -19,7 +19,7 @@ services:
       - bootstrap_node
 
   onboarded_node_2:
-    image: xgreenx99/go-xpx:0.2.4
+    image: xgreenx99/go-xpx:0.3.1
     volumes:
       - ./onboarded_node_2/.xpx:/root/.xpx:rw
     restart: always
@@ -29,7 +29,7 @@ services:
       - bootstrap_node
 
   not_onboarded_node:
-    image: xgreenx99/go-xpx:0.2.4
+    image: xgreenx99/go-xpx:0.3.1
     volumes:
       - ./not_onboarded_node/.xpx:/root/.xpx:rw
     restart: always
@@ -39,7 +39,7 @@ services:
       - bootstrap_node
 
   empty_node:
-    image: xgreenx99/go-xpx:0.2.4
+    image: xgreenx99/go-xpx:0.3.1
     volumes:
       - ./empty_node/.xpx:/root/.xpx:rw
     restart: always
