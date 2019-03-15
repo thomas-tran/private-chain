@@ -16,12 +16,15 @@ You can find addresses with money in `Blockchain/addresses/addresses.yaml`
 
 To clean up Blockhain:
 ```bash
-docker-compose down
-sudo rm -R data/
-sudo rm -R mongodata/
-mkdir mongodata
-mkdir data -p
-sudo cp -R 00000 data/
-docker-compose up -d
-docker-compose logs --tail 100 --follow
+./clean.sh
+```
+
+To generate random addresses:
+```bash
+./generateAddresses.sh 10 mijin-test
+```
+
+To re-generate nemesis block, you need to modify `nemesis/block-properties-file.properties` and run:
+```bash
+./generateNemesisBlock.sh && ./clean.sh
 ```
