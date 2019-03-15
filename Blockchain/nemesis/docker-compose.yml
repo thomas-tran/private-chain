@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  db:
+    image: mongo
+    command: bash -c "mongod --dbpath=/dbdata --bind_ip=db"
+    stop_signal: SIGINT
+    volumes:
+    - ./mongodata:/dbdata:rw
+
+  nemgen:
+    image: xgreenx99/proximax-catapult-server:0.2.2
+    volumes:
+      - ./../resources/:/resources/
+      - ./:/nemesis/
+      - ./data:/data/
+      - ./seed:/seed/
+    working_dir: "/catapult/"
+    entrypoint: ["bin/catapult.tools.nemgen"]
+    command: "--nemesisProperties /nemesis/block-properties-file.properties"
+    depends_on:
+    - db
