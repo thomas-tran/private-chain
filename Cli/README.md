@@ -6,4 +6,4 @@ docker-compose run cli --help
 docker-compose run cli contract create /files/4.png --duration 100000 --replications 1 --verifications 1 --pdp APDP
 ```
 
-To use another image of cli change version of image `xgreenx99/go-xpx:0.3.1` in `docker-compose.yml`
+To use another image of cli change version of image `xgreenx99/go-xpx-dfms:0.5.0` in `docker-compose.yml`
