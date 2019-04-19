@@ -1,4 +1,4 @@
-# Storage-dev-net
+# Dfms-dev-net
 
 To run full proximax node on your PC, you need to run Bloackchain node first, after up 3 storage nodes.
 At the end of setup you can try upload file to your locale node.
