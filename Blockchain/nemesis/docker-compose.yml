@@ -9,7 +9,7 @@ services:
     - ./mongodata:/dbdata:rw
 
   nemgen:
-    image: xgreenx99/proximax-catapult-server:0.4.1
+    image: xgreenx99/proximax-catapult-server:0.6.0
     volumes:
       - ./../resources/:/resources/
       - ./:/nemesis/
@@ -22,7 +22,7 @@ services:
     - db
 
   addresses:
-    image: xgreenx99/proximax-catapult-server:0.4.1
+    image: xgreenx99/proximax-catapult-server:0.6.0
     volumes:
       - ./../resources/:/resources/
       - ./:/nemesis/
