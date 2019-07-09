@@ -32,7 +32,7 @@ services:
     # command: sh -c "/catapult/bin/catapult.server /catapultconfig"
 
   rest-gateway:
-    image: xgreenx99/proximax-catapult-rest:0.6.0
+    image: xgreenx99/proximax-catapult-rest:0.6.1
     ports:
     - "3000:3000"
     volumes:
