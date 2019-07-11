@@ -20,7 +20,7 @@ services:
 
   catapult-api-node:
     # Downloads Catapult Server from specified Docker repo
-    image: xgreenx99/proximax-catapult-server:0.6.0
+    image: xgreenx99/proximax-sirius-blockchain:0.6.1
     ports:
       - 7902:7902
       - 7900:7900
@@ -32,7 +32,7 @@ services:
     # command: sh -c "/catapult/bin/catapult.server /catapultconfig"
 
   rest-gateway:
-    image: xgreenx99/proximax-catapult-rest:0.6.1
+    image: xgreenx99/proximax-catapult-rest:0.6.2
     ports:
     - "3000:3000"
     volumes:
